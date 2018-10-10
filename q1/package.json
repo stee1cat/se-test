@@ -1,0 +1,17 @@
+{
+  "name": "se-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate:users": "node users.js",
+    "generate:forums": "node forums.js",
+    "generate:topics": "node topics.js",
+    "generate:messages": "node messages.js"
+  },
+  "author": "Gennadiy Khatuntsev <e.steelcat@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}
