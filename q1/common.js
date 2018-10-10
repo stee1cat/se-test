@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const USERS_COUNT = 10;
-const TOPICS_COUNT = 20;
+const TOPICS_COUNT = 50;
 
 function randomInt(min, max) {
   const diff = max - min;
