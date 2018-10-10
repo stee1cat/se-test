@@ -1,0 +1,1 @@
+# Visits counter without database with PHP
