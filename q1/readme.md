@@ -8,10 +8,11 @@
 
 ## Generate fake datasets
 
-`
+```
 npm i
 npm run geenerate:users
 npm run geenerate:forums
 npm run geenerate:topics
+
 npm run geenerate:messages
-`
+```

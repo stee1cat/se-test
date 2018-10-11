@@ -1,0 +1,17 @@
+{
+    "name": "stee1cat/q4",
+    "authors": [
+        {
+            "name": "Gennadiy Khatuntsev",
+            "email": "e.steelcat@gmail.com"
+        }
+    ],
+    "scripts": {
+        "tests": "codecept run unit"
+    },
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^2.5",
+        "codeception/specify": "^1.1"
+    }
+}
