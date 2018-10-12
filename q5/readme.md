@@ -1,3 +1,3 @@
 # Gallery
 
-[Live demo](ttps://angular-h3dssq.stackblitz.io/)
+[Live demo](https://angular-h3dssq.stackblitz.io/)
