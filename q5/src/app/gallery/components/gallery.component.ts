@@ -9,7 +9,7 @@ import { ModalService } from '../../ui/services/modal.service';
 
 const LIMIT = 9;
 
-@Component({ 
+@Component({
   selector: 'gallery',
   templateUrl: './gallery.component.html',
   styleUrls: [
@@ -21,11 +21,11 @@ export class GalleryComponent {
   public total: number = 0;
   public pageStream = new Subject<number>();
   public photos: Photo[] = [];
-  public photoStream: Observable<Photo[]>;
+  public photoStream: Observable<{total: number, data: Photo[]}>;
   public disableBtn: boolean = false;
 
   constructor(protected restApi: RestApiService,
-             protected modalService: ModalService) { }
+              protected modalService: ModalService) { }
 
   public ngOnInit() {
     this.photoStream = this.pageStream.pipe(
@@ -39,19 +39,16 @@ export class GalleryComponent {
       }),
       mergeMap((params: {page: number}) => {
         return this.restApi.photos(LIMIT * params.page, LIMIT);
-      }),
-      map(({ total, data }: {total: number, data: Photo[]}) => {
-        this.total = total;
-        this.disableBtn = (this.page + 1) * LIMIT > total;
-
-        return data;
       })
     );
 
-    this.photoStream.subscribe(photos => {
-      this.photos = this.photos.concat(photos);
+    this.photoStream.subscribe(({ total, data }) => {
+      this.total = total;
+      this.disableBtn = (this.page + 1) * LIMIT > total;
+
+      this.photos = this.photos.concat(data);
     });
-  } 
+  }
 
   public nextPage() {
     this.page++;

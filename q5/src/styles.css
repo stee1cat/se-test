@@ -10,19 +10,17 @@
 }
 
 .modal__overlay {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    background: rgba(6, 40, 59, 0.4);
-    /* IE6–IE8 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #7F000000, endColorstr = #7F000000);
-    zoom: 1;
-    opacity: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background: rgba(6, 40, 59, 0.4);
+  zoom: 1;
+  opacity: 0;
 }
 
 .modal__overlay > * {
