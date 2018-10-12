@@ -1,0 +1,9 @@
+<div class="gallery">
+  <div class="gallery__item" *ngFor="let photo of photos; index as i">
+    <img class="image"
+        [src]="photo.thumbnailUrl"
+        [alt]="photo.title"
+        (click)="openDetailModal(photo.url)" />
+  </div>
+  <button class="gallery__next" (click)="nextPage()" *ngIf="!disableBtn">Next</button>
+</div>

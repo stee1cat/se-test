@@ -1,0 +1,42 @@
+.modal {
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 20px;
+  transform: scale(.5);
+  opacity: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+}
+
+.modal__overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(6, 40, 59, 0.4);
+    /* IE6–IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #7F000000, endColorstr = #7F000000);
+    zoom: 1;
+    opacity: 0;
+}
+
+.modal__overlay > * {
+  -webkit-transform: translateZ(0px);
+}
+
+.modal__lock {
+  overflow: hidden;
+}
+
+.modal--opened .modal {
+  opacity: 1;
+}
+
+.modal--opened .modal__overlay {
+  opacity: 1;
+}
