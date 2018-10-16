@@ -23,3 +23,7 @@ npm run geenerate:messages
 **Дополнительное задание:** Написать SQL который вернет список из последних 10 тем (по времени) с их последним сообщением и его автором, в которых отписалось больше 3 пользователей. Результат: тема | сообщение | автор | дата.
 
 *Решение должно быть представлено в виде ссылки на [db-fiddle.com](https://db-fiddle.com/) или [sqlfiddle.com](https://sqlfiddle.com/).*
+
+## Result
+
+Решение: [https://www.db-fiddle.com/f/rBimoawvwE36XqkeHm7J8Y/0](db-fiddle.com).
