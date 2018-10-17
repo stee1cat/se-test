@@ -26,4 +26,4 @@ npm run geenerate:messages
 
 ## Result
 
-Решение: [https://www.db-fiddle.com/f/rBimoawvwE36XqkeHm7J8Y/0](db-fiddle.com).
+Решение: [db-fiddle.com](https://www.db-fiddle.com/f/rBimoawvwE36XqkeHm7J8Y/0).
