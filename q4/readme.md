@@ -12,7 +12,7 @@ See `tests/BigIntTest.php`.
 
 ## Result
 
-Решение: [https://codeshare.io/24xb48](codeshare.io)
+Решение: [codeshare.io](https://codeshare.io/24xb48)
 
 [Тесты](./tests).
 
